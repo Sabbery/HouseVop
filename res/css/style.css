@@ -1,0 +1,1398 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+
+  a{
+      text-decoration: none;
+      color: unset;
+  }
+  a:hover{
+      text-decoration: none;
+      color: unset;
+  }
+
+
+  ul{
+      padding:0px;
+  }
+  ul li{
+      list-style-type: none;
+  }
+
+  /* Fonts */
+  @font-face {
+    font-family: Playfair Display;
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+  }
+  @font-face {
+    font-family: Playfair Bold;
+    src: url(../fonts/PlayfairDisplay-Bold.ttf);
+  }
+  @font-face {
+    font-family:Raleway;
+    src: url(../fonts/Raleway-Regular.ttf);
+  }
+  @font-face {
+    font-family:Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+  }
+
+  p,h1{
+      margin:0px;
+  }
+
+  body {
+    background-color: #242B33;
+    overflow-x: hidden;
+}
+
+.primary-color{
+    color: #D4C17F;
+}
+
+  /* Navigation */
+
+  nav{
+      position: absolute;
+      z-index: 10;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: 100%;
+      transition: 0.3s;
+  }
+  nav.fixed{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 11;
+    padding: 15px 0px;
+    transition: 0.3s;
+  }
+  .main-logo-margin{
+    margin: 0px !important;
+  }
+  .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-logo-hide{
+  display: none;
+}
+
+.logo {
+    max-width: 135px;
+}
+.logo img:first-child{
+   margin-bottom: 15px;
+}
+.menu {
+    width: 100%;
+    max-width: 541px;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul li {
+    color: white;
+    list-style-type: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    font-family: Raleway;
+}
+
+
+/* Slider */
+
+.slider-item {
+    position: relative;
+}
+
+
+.slider-content{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 556px;
+    height: max-content;
+}
+
+.slider-content h1 {
+    margin: 0px;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #D4C17F;
+    font-family: Playfair Bold;
+}
+
+.mousewheel {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: fit-content;
+    bottom: -40%;
+    height: fit-content;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    max-width: 556px;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.location-info {
+    display: flex;
+}
+.location-info p {
+    color: white;
+    margin: 0px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.location-info svg {
+    margin-right: 18px;
+}
+.phone-info {
+    display: flex;
+}
+.phone-info svg {
+    margin-right: 18px;
+}
+.phone-info p {
+    color: white;
+    margin: 0px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+
+/* About Territory */
+
+section.territory {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+.territory-content {
+    display: flex;
+    width: 100%;
+    max-width: 795px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+.territory-col {
+    max-width: 200px;
+}
+
+.territory-img {
+    height: 80px;
+    margin-bottom: 50px;
+}
+.territory-col img {
+    display: flex;
+    margin: auto;
+}
+
+.territory-col p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+}
+.second-section {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 285px;
+    right: 14%;
+}
+
+
+
+
+/* Our Offices */
+.office-container{
+    max-width: 1130px;
+    position: relative;
+}
+
+.third-section {
+    position: absolute;
+    top: 12%;
+    left: -18%;
+}
+.office-container h1{
+font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 48px;
+margin: 0px;
+margin-bottom: 100px;
+color: #D4C17F;
+}
+
+.office {
+    position: relative;
+}
+
+.office img{
+    width: 100%;
+}
+.office-content {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    bottom: 50px;
+    left: 50px;
+}
+
+.office-content p {
+    margin: 0;
+    color: white;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.office-col:not(:last-child):not(:nth-last-child(2)){
+    margin-bottom: 30px;
+}
+
+
+
+/* Show Office */
+
+.show-office-container{
+    max-width: 1130px;
+    padding: 180px 15px;
+}
+
+.show-office-background{
+    background-image: url('../img/show-office.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.show-office-left h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.show-office-left p {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+.button-first-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.left-button {
+    flex: 0 0 50%;
+    display: flex;
+}
+
+.left-button button {
+    width: 100%;
+    max-width: 255px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    background: rgba(255,255,255,0.2);
+    border: 0px;
+    padding: 12px 0px;
+    color: #BEBEBE;
+}
+.right-button {
+    flex: 0 0 50%;
+    max-width: 255px;
+}
+.right-button-primary {
+    flex: 0 0 50%;
+    max-width: 255px;
+}
+
+.right-button button {
+    width: 100%;
+    max-width: 255px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    background: rgba(255,255,255,0.2);
+    border: 0px;
+    padding: 12px 0px;
+    color: #BEBEBE;
+}
+
+
+.button-second-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-button-primary button {
+    width: 100%;
+    max-width: 255px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    background: #D4C17F;
+    border: 0px;
+    padding: 12px 0px;
+    color: #FFFFFF;
+}
+
+.left-button p {
+    color: white;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    max-width: 255px;
+}
+
+
+/* Video */
+
+
+.video{
+    padding-bottom: 180px;
+}
+.video-container {
+    max-width: 720px;
+    margin: auto;
+    position: relative;
+}
+
+.forth-section {
+    position: absolute;
+    right: -57%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 285px;
+}
+
+#video{
+    width: 100%;
+}
+
+.play-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(36, 43, 51, 0.8), rgba(36, 43, 51, 0.8));
+    align-items: center;
+}
+
+.play-container img {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    height: 100px;
+}
+
+.play-container.paused{
+display: none;
+}
+
+.pause-video.active-pause{
+    display: none;
+}
+.pause-video{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* Map */
+.map{
+    margin-bottom: 180px;
+}
+.container-map {
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+}
+.fifth-section {
+  position: absolute;
+  top: 18%;
+  left: -12%;
+}
+.container-map h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0;
+    margin-bottom: 100px;
+    color: #D4C17F;
+}
+
+.fifht-section {
+  position: absolute;
+  left: -12%;
+  top: 21%;
+}
+
+
+/* Questions */
+.question{
+    margin-bottom: 180px;
+}
+.question-container {
+    max-width: 1110px;
+    margin: auto;
+}
+
+.question-container h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;
+    margin-bottom: 60px;
+}
+
+.question-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-col {
+    max-width: 255px;
+    width: 100%;
+}
+.question-col p{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+}
+
+.question-col button {
+    width: 100%;
+    border: 0px;
+    background: rgba(255,255,255,0.2);
+    color: #BEBEBE;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    padding: 11px 0px;
+}
+
+.question-col-primary {
+    max-width: 255px;
+    width: 100%;
+}
+
+
+.question-col-primary button {
+    width: 100%;
+    border: 0px;
+    background: #D4C17F;
+    color: white;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    padding: 11px 0px;
+}
+
+
+/* Footer */
+
+footer {
+  background: #2D343C;
+  padding: 60px 0px;
+}
+
+.footer-container {
+    max-width: 1110px;
+}
+
+.logo-footer {
+    max-width: 135px;
+}
+
+.logo-footer img:first-child {
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    max-width: fit-content;
+    margin: auto;
+}
+
+.footer-col ul li {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 150px;
+}
+
+
+
+
+
+
+
+@media(max-width:1200px){
+
+  .question-col {
+    max-width: 200px;
+}
+.question-col-primary {
+  max-width: 200px;
+}
+}
+@media(min-width:992px){
+  .menu-mobile-icon{
+    display: none;
+  }
+  .mobile-menu{
+    display: none;
+  }
+
+
+
+}
+@media(max-width:992px){
+  .menu ul {
+    display: none;
+}
+nav {
+  background: rgba(0,0,0,0.2);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.menu-mobile-icon{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.menu-mobile-icon img{
+  width: 100%;
+  max-width: 30px;
+}
+
+.mobile-menu {
+  position: fixed;
+  right: -350px;
+  background: white;
+  z-index: 12;
+  height: 100vh;
+  padding: 30px;
+  transition: 0.5s;
+}
+
+
+.mobile-menu ul li {
+  font-size: 40px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 60px;
+  letter-spacing: 0.05em;
+}
+
+.close-btn {
+  font-size: 34px;
+  text-align: right;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-family: cursive;
+  background: #d4c17f;
+  padding: 0px 11px;
+  color: white;
+}
+
+.blackscreen{
+  position: fixed;
+  width: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 11;
+}
+
+
+
+.slider-content {
+  max-width: 400px;
+}
+.slider-content h1 {
+  font-size: 27px;
+  line-height: 40px;
+}
+.mousewheel {
+  bottom: -50%;
+}
+.info {
+  max-width: 430px;
+  bottom: 3%;
+}
+.location-info p {
+  font-size: 15px;
+  line-height: 21px;
+}
+
+
+.footer-col ul{
+  max-width: unset;
+}
+
+.footer-col {
+  margin-bottom: 60px;
+}
+
+footer {
+  padding-bottom: 0px;
+}
+
+
+.fifth-section{
+  display: none;
+}
+
+.second-section {
+  display: none;
+}
+.third-section{
+  display: none;
+}
+.forth-section {
+  display: none;
+}
+
+
+
+.button-first-row {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.button-second-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+
+.question-col {
+  max-width: 150px;
+  }
+.question-col-primary {
+max-width: 150px;
+  }
+
+
+}
+@media(max-width:768px){
+  .territory-img {
+    margin-bottom: 30px;
+}
+.territory-col p {
+  font-size: 15px;
+  line-height: 21px;
+}
+section.territory {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.office-container h1 {
+  font-size: 30px;
+  line-height: unset;
+  margin-bottom: 50px;
+  color: #D4C17F;
+}
+
+.show-office-container {
+  padding: 90px 15px;
+}
+
+.show-office-left h1 {
+  font-size: 30px;
+  line-height: unset;
+  margin-bottom: 50px;
+}
+
+
+.video {
+  padding-bottom: 90px;
+}
+
+.container-map h1 {
+  font-size: 30px;
+  line-height: unset;
+  margin-bottom: 50px;
+
+}
+.question-container h1 {
+  font-size: 30px;
+  line-height: unset;
+  margin-bottom: 50px;
+}
+.question {
+  margin-bottom: 90px;
+}
+
+.hide-question {
+  display: none;
+}
+
+.map {
+  margin-bottom: 90px;
+}
+
+
+
+
+}
+
+
+
+@media(max-width:576px){
+
+
+nav {
+      padding-top: 10px;
+      padding-bottom: 10px;
+}
+.logo {
+  max-width: 100px;
+}
+.logo img:first-child {
+  margin-bottom: 0px;
+}
+
+.logo img {
+  width: 100%;
+}
+.menu-mobile-icon img {
+  max-width: 20px;
+}
+
+.slider-container {
+  padding-top: 60px;
+}
+
+.info {
+  display: none;
+}
+.slider-content h1 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.slider-content {
+  max-width: 250px;
+}
+
+.slider-content {
+  max-width: 250px;
+}
+
+.mousewheel {
+  bottom: -80%;
+}
+
+
+
+.button-first-row {
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.left-button {
+  margin-bottom: 20px;
+}
+.left-button button {
+  max-width: unset;
+}
+.right-button {
+  max-width: unset;
+}
+.right-button button {
+  max-width: unset;
+}
+
+.left-button.left-button-p{
+display: none;
+}
+
+.right-button-primary {
+  flex: 0 0 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+.right-button-primary button {
+  max-width: unset;
+}
+
+.video-container {
+  width: 100%;
+}
+
+
+
+.territory-col.territory-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-bottom: 30px;
+}
+.territory-content {
+  flex-wrap: wrap;
+}
+
+section.territory {
+  padding-bottom: 30px;
+}
+.territory-col p {
+  font-size: 13px;
+}
+
+.office-content {
+  bottom: 30px;
+  left: 30px;
+}
+.office-content p {
+  font-size: 19px;
+  line-height: 19px;
+}
+.play-container img {
+  height: 50px;
+}
+
+.mobile-hide{
+  display: none;
+}
+
+
+.footer-col {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+
+
+.question-col {
+  max-width: 200px;
+  margin: 0px 10px;
+  margin-bottom: 10px;
+}
+
+.question-row {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.question-col-primary {
+  max-width: 200px;
+}
+
+
+.office-container h1 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.show-office-left h1 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.show-office-left p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.show-office-container {
+  padding: 30px 15px;
+}
+section.territory {
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+.video {
+  padding-bottom: 30px;
+}
+
+.container-map h1 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+
+.map {
+  margin-bottom: 30px;
+}
+.question {
+  margin-bottom: 30px;
+}
+
+footer {
+  padding: 30px 0px;
+}
+
+.mousewheel svg {
+  max-width: 20px;
+}
+.mobile-menu ul li {
+  font-size: 40px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+}
+
+.mobile-menu {
+  width: 100%;
+}
+.close-btn {
+  font-size: 17px;
+  padding: 0px 7px;
+}
+
+
+
+
+}

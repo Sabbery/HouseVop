@@ -1,39 +1,38 @@
-
-
 // Main Slider
 $('.slider').owlCarousel({
-    loop:true,
-    margin:0,
-    nav:false,
+    loop: true,
+    margin: 0,
+    nav: false,
     responsiveClass: true,
     items: 1,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     dots: false,
 })
 
 
 // Video Control
 
-const vid = document.getElementById("video"); 
+const vid = document.getElementById("video");
 const play = document.querySelector('.play-container');
 const pause = document.querySelector('.pause-video');
-function playVid() { 
-  vid.play(); 
-  play.classList.add("paused");
-  pause.classList.remove("active-pause");
-} 
 
-function pauseVid() { 
-  vid.pause(); 
-  play.classList.remove("paused");
-  pause.classList.add("active-pause");
-} 
+function playVid() {
+    vid.play();
+    play.classList.add("paused");
+    pause.classList.remove("active-pause");
+}
+
+function pauseVid() {
+    vid.pause();
+    play.classList.remove("paused");
+    pause.classList.add("active-pause");
+}
 
 vid.onended = function() {
     play.classList.remove("paused");
-  pause.classList.add("active-pause");
+    pause.classList.add("active-pause");
 };
 
 
@@ -42,69 +41,97 @@ vid.onended = function() {
 
 function openNav() {
 
-  setTimeout(function() {
-      $('.mobile-menu').css({
-          right: '0px'
-      });
-  }, 0);
-  
-  $('html').css({
-      overflow: 'hidden',
-      height: '100%'
-  });
-  
-  $('.blackscreen').css({
-      width: '100%',
-      opacity: '1'
-  });
-  
-  }
-  
-  function closeNav() {
-  
-  setTimeout(function() {
-      $('.mobile-menu').css({
-          right: '-350px'
-  
-      });
-  }, 0);
-  
-  $('html').css({
-      overflow: 'visible',
-      height: '100%'
-  });
-  
-  $('.blackscreen').css({
-  
-      opacity: '0'
-  });
-  
-  setTimeout(function() {
-  
-      $('.blackscreen').css({
-          width: '0',
-      });
-  
-  }, 500);
-  
-  }
-  
-  $('.blackscreen').click(function() {
-  
-  $(this).css({
-  
-      opacity: '0',
-      width: '0'
-  });
+    setTimeout(function() {
+        $('.mobile-menu').css({
+            right: '0px'
+        });
+    }, 0);
 
-  $('.mobile-menu').css({
-      right: '-350px',
-  
-  });
-  
-  $('html').css({
-      overflow: 'visible',
-      height: '100%'
-  });
-  
-  });
+    $('html').css({
+        overflow: 'hidden',
+        height: '100%'
+    });
+
+    $('.blackscreen').css({
+        width: '100%',
+        opacity: '1'
+    });
+
+}
+
+function closeNav() {
+
+    setTimeout(function() {
+        $('.mobile-menu').css({
+            right: '-350px'
+
+        });
+    }, 0);
+
+    $('html').css({
+        overflow: 'visible',
+        height: '100%'
+    });
+
+    $('.blackscreen').css({
+
+        opacity: '0'
+    });
+
+    setTimeout(function() {
+
+        $('.blackscreen').css({
+            width: '0',
+        });
+
+    }, 500);
+
+}
+
+$('.blackscreen').click(function() {
+
+    $(this).css({
+
+        opacity: '0',
+        width: '0'
+    });
+
+    $('.mobile-menu').css({
+        right: '-350px',
+
+    });
+
+    $('html').css({
+        overflow: 'visible',
+        height: '100%'
+    });
+
+});
+
+
+
+
+//  Header Fixed
+
+
+
+window.onscroll = function() {
+    myFunction()
+};
+
+const header = document.getElementById("nav");
+const subLogo = document.querySelector(".sub-logo");
+const mainlogo = document.querySelector(".main-logo");
+const sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("fixed");
+        subLogo.classList.add("sub-logo-hide");
+        mainlogo.classList.add("main-logo-margin");
+    } else {
+        header.classList.remove("fixed");
+        subLogo.classList.remove("sub-logo-hide");
+        mainlogo.classList.remove("main-logo-margin");
+    }
+}

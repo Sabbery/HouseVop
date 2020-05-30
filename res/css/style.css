@@ -21,7 +21,9 @@
   /**
    * Remove the margin in all browsers.
    */
-  
+   body,html{
+    overflow-x:hidden !important; 
+  } 
 body {
   margin: 0;
 }
